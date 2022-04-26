@@ -26,13 +26,13 @@ repos:
 #      - id: detect-aws-credentials  # detects *your* aws credentials from the aws cli credentials file.
       - id: detect-private-key  # detects the presence of private keys.
 #      - id: double-quote-string-fixer  # replaces double quoted strings with single quoted strings.
-      - id: end-of-file-fixer  # ensures that a file is either empty, or ends with one newline.
+      #- id: end-of-file-fixer  # ensures that a file is either empty, or ends with one newline.
 #      - id: file-contents-sorter  # sorts the lines in specified files (defaults to alphabetical). you must provide list of target files as input in your .pre-commit-config.yaml file.
 #      - id: fix-byte-order-marker  # removes utf-8 byte order marker.
 #      - id: fix-encoding-pragma  # adds  # -*- coding: utf-8 -*- to the top of python files.
 #      - id: forbid-new-submodules  # prevents addition of new git submodules.
-      - id: mixed-line-ending  # replaces or checks mixed line ending.
-        args: ['--fix=no']
+      #- id: mixed-line-ending  # replaces or checks mixed line ending.
+        #args: ['--fix=no']
 #      - id: name-tests-test  # this verifies that test files are named correctly.
 #      - id: no-commit-to-branch  # don't commit to branch
 #      - id: requirements-txt-fixer  # sorts entries in requirements.txt.
@@ -69,10 +69,10 @@ repos:
         additional_dependencies:
           - toml
 
-  - repo: https://github.com/kynan/nbstripout.git
-    rev: '0.5.0'
-    hooks:
-    -   id: nbstripout
+  #- repo: https://github.com/kynan/nbstripout.git
+    #rev: '0.5.0'
+    #hooks:
+    #-   id: nbstripout
 
   - repo: https://github.com/PyCQA/bandit
     rev: '1.7.1'
